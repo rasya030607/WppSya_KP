@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,300&family=Poppins:ital,wght@1,500&display=swap');
+html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: #040D12;
+}
+
+.judul{
+  font-size: 32px;
+}
+.icon{
+  font-size: 20px;
+}
+ 
+nav {
+  background-color: #93B1A6;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 10px;
+  align-items: center; /* Vertically center items in the navbar */
+  z-index: 5;
+}
+
+nav ul{
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  font-size: 20px;
+  color: #fff;
+  align-items: center;
+}
+
+.pilihan{
+  background-color: #fff;
+  padding: 10px 10px;
+  border-radius: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'Barlow condensed','Poppins','Times New Roman';
+  font-size: 20px;
+  color: black;
+  font-weight: 600;
+  padding: 8px 0;
+  transition: all;
+  transition-duration: 200ms;
+  border-bottom: 2px solid #040d1200;
+}
+
+nav ul li a:hover{
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px 10px;
+  color: #040D12;
+}
+
+
+.btn_upload {
+  background-color: #fff;
+  color: #040D12;
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  font-family: 'Poppins';
+  text-decoration: none;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center; /* Tambahkan properti text-align */
+  }
+
+  nav ul {
+    margin-right: 40px;
+    text-align: center;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul li {
+    text-align: center;
+    width: 100%;
+  }
+  
+}
+.box{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.box1 {
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+  height: auto;
+  margin: 15px auto;
+  background: #fff;
+  font-family: 'poppins';
+  border: solid #93B1A6 5px;
+  padding: 5px;
+}
+
+.box1 h2 {
+  text-align: center;
+}
+
+.box1 p {
+  text-align: center;
+  margin-top: -15px;
+}
+
+.box1 img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
+}
+
+.box1:hover img {
+  -webkit-transform: scale(1.02);
+  transform: scale(1.02);
+}
+
+.box1 a {
+  text-align: center;
+  margin: 10px 0; /* Adjusted margin */
+}
+
+.btn_download,
+.btn_comment {
+  display: inline-block; /* Display inline-block for inline elements */
+  margin: 10px;
+  background-color: #93B1A6;
+  color: #fff;
+  font-family: 'Poppins', 'Times New Roman', Times, serif;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: all 200ms;
+}
+
+
+@media screen and (max-width: 768px) {
+  .box {
+    grid-template-columns: 1fr; /* Set a single column for smaller screens */
+  }
+}
